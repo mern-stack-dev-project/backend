@@ -18,7 +18,7 @@ connectDB(); // Ensure this is called to establish the database connection
 
 // api endpoints
 app.use("/api/food", foodRouter)
-app.use("/images", express.static('uploads'))
+app.use("/images", express.static('uploads')) // Serve static files from the 'uploads' directory
 
 app.get("/", (req, res) => {
   res.send("API working")
